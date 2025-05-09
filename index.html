@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Unit Converter</title>
+</head>
+<body>
+    <h2>Unit Converter</h2>
+
+    <form id="convertForm">
+        <input type="number" id="value" placeholder="Enter value" step="any" required>
+
+        <label for="from_unit">From:</label>
+        <select id="from_unit">
+            <option value="kg">kg</option>
+            <option value="lbs">lbs</option>
+            <option value="g">g</option>
+            <option value="oz">oz</option>
+        </select>
+
+        <label for="to_unit">To:</label>
+        <select id="to_unit">
+            <option value="kg">kg</option>
+            <option value="lbs">lbs</option>
+            <option value="g">g</option>
+            <option value="oz">oz</option>
+        </select>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
